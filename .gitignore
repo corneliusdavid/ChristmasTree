@@ -1,0 +1,66 @@
+# Delphi compiler-generated files
+*.dcu
+*.exe
+*.dll
+*.bpl
+*.bpi
+*.dcp
+*.so
+*.apk
+*.drc
+*.map
+*.dres
+*.rsm
+*.tds
+*.dsk
+*.ddp
+*.deployed
+*.deployproj
+
+# Delphi autosave and backup files
+*.~*
+__history/
+__recovery/
+
+# IDE local files
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+
+# Build directories
+Win32/
+Win64/
+Android/
+iOSDevice64/
+iOSDevice32/
+iOSSimulator/
+OSX32/
+OSX64/
+Linux64/
+
+# Android intermediate files
+*.ap_
+*.apk
+*.dex
+
+# iOS intermediate files
+*.ipa
+
+# Project user options
+*.dproj.local
+
+# Binary model support files
+*.otares
+*.ridl
+*.modeldata
+
+# Other
+*.log
+Thumbs.db
+.DS_Store
+Android64
+*.res
+CLAUDE.md
+*.dsv
