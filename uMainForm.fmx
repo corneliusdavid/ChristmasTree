@@ -1,0 +1,42 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Christmas Tree'
+  ClientHeight = 800
+  ClientWidth = 480
+  Fill.Color = claMidnightblue
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object TreeImage: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Size.Width = 480.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 16
+    OnTimer = Timer1Timer
+    Left = 24
+    Top = 24
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 24
+    Top = 72
+  end
+  object FallTimer: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = FallTimerTimer
+    Left = 24
+    Top = 120
+  end
+end
