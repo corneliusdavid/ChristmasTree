@@ -3,11 +3,11 @@
         <ProjectGuid>{8B2E4F1A-3D5C-4B2E-9F1A-2D5E4B3C1A2E}</ProjectGuid>
         <MainSource>ChristmasTree.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>37891</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>FMX</FrameworkType>
-        <Platform Condition="'$(Platform)'==''">iOSDevice64</Platform>
+        <Platform Condition="'$(Platform)'==''">Android64</Platform>
         <ProjectVersion>20.3</ProjectVersion>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -1363,12 +1363,6 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice64\Debug\ChristmasTree.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>ChristmasTree</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="iOSDevice64\Debug\ChristmasTree.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
@@ -1418,40 +1412,13 @@ $(PostBuildEvent)]]></PostBuildEvent>
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="images\ChristmasTree.png" Configuration="Debug" Class="File">
-                    <Platform Name="Android">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ChristmasTree.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Android64">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ChristmasTree.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ChristmasTree.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ChristmasTree.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
                         <RemoteName>ChristmasTree.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="images\ChristmasTree.png" Configuration="Debug" Class="File">
-                    <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS\</RemoteDir>
-                        <RemoteName>ChristmasTree.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="images\ChristmasTree.png" Configuration="Release" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
                         <RemoteName>ChristmasTree.png</RemoteName>
@@ -1485,6 +1452,40 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="images\ChristmasTree.png" Configuration="Release" Class="File">
+                    <Platform Name="Android">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ChristmasTree.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ChristmasTree.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ChristmasTree.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ChristmasTree.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ChristmasTree.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="images\ornament_blue.png" Configuration="Debug" Class="File">
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
+                        <RemoteName>ornament_blue.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="images\ornament_blue.png" Configuration="Debug" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
@@ -1512,7 +1513,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_blue.png" Configuration="Debug" Class="File">
+                <DeployFile LocalName="images\ornament_blue.png" Configuration="Release" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
                         <RemoteName>ornament_blue.png</RemoteName>
@@ -1546,40 +1547,6 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_blue.png" Configuration="Release" Class="File">
-                    <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS\</RemoteDir>
-                        <RemoteName>ornament_blue.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="images\ornament_blue_broken.png" Configuration="Debug" Class="File">
-                    <Platform Name="Android">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ornament_blue_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Android64">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ornament_blue_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_blue_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_blue_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_blue_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="images\ornament_blue_broken.png" Configuration="Debug" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
@@ -1587,7 +1554,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_blue_broken.png" Configuration="Release" Class="File">
+                <DeployFile LocalName="images\ornament_blue_broken.png" Configuration="Debug" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
                         <RemoteName>ornament_blue_broken.png</RemoteName>
@@ -1621,6 +1588,40 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="images\ornament_blue_broken.png" Configuration="Release" Class="File">
+                    <Platform Name="Android">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ornament_blue_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ornament_blue_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_blue_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_blue_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_blue_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="images\ornament_gingerbreadman.png" Configuration="Debug" Class="File">
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
+                        <RemoteName>ornament_gingerbreadman.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="images\ornament_gingerbreadman.png" Configuration="Debug" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
@@ -1648,7 +1649,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_gingerbreadman.png" Configuration="Debug" Class="File">
+                <DeployFile LocalName="images\ornament_gingerbreadman.png" Configuration="Release" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
                         <RemoteName>ornament_gingerbreadman.png</RemoteName>
@@ -1682,40 +1683,6 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_gingerbreadman.png" Configuration="Release" Class="File">
-                    <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS\</RemoteDir>
-                        <RemoteName>ornament_gingerbreadman.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="images\ornament_gingerbreadman_broken.png" Configuration="Debug" Class="File">
-                    <Platform Name="Android">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Android64">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="images\ornament_gingerbreadman_broken.png" Configuration="Debug" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
@@ -1723,7 +1690,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_gingerbreadman_broken.png" Configuration="Release" Class="File">
+                <DeployFile LocalName="images\ornament_gingerbreadman_broken.png" Configuration="Debug" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
                         <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
@@ -1757,6 +1724,40 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="images\ornament_gingerbreadman_broken.png" Configuration="Release" Class="File">
+                    <Platform Name="Android">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_gingerbreadman_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="images\ornament_gold.png" Configuration="Debug" Class="File">
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
+                        <RemoteName>ornament_gold.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="images\ornament_gold.png" Configuration="Debug" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
@@ -1784,7 +1785,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_gold.png" Configuration="Debug" Class="File">
+                <DeployFile LocalName="images\ornament_gold.png" Configuration="Release" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
                         <RemoteName>ornament_gold.png</RemoteName>
@@ -1818,40 +1819,6 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_gold.png" Configuration="Release" Class="File">
-                    <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS\</RemoteDir>
-                        <RemoteName>ornament_gold.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="images\ornament_gold_broken.png" Configuration="Debug" Class="File">
-                    <Platform Name="Android">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ornament_gold_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Android64">
-                        <RemoteDir>assets\internal</RemoteDir>
-                        <RemoteName>ornament_gold_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_gold_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_gold_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_gold_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="images\ornament_gold_broken.png" Configuration="Debug" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
@@ -1859,7 +1826,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_gold_broken.png" Configuration="Release" Class="File">
+                <DeployFile LocalName="images\ornament_gold_broken.png" Configuration="Debug" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
                         <RemoteName>ornament_gold_broken.png</RemoteName>
@@ -1893,6 +1860,40 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="images\ornament_gold_broken.png" Configuration="Release" Class="File">
+                    <Platform Name="Android">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ornament_gold_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>assets\internal</RemoteDir>
+                        <RemoteName>ornament_gold_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_gold_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_gold_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>ornament_gold_broken.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="images\ornament_red.png" Configuration="Debug" Class="File">
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
+                        <RemoteName>ornament_red.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="images\ornament_red.png" Configuration="Debug" Class="File">
                     <Platform Name="Android">
                         <RemoteDir>assets\internal</RemoteDir>
@@ -1920,7 +1921,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_red.png" Configuration="Debug" Class="File">
+                <DeployFile LocalName="images\ornament_red.png" Configuration="Release" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
                         <RemoteName>ornament_red.png</RemoteName>
@@ -1954,10 +1955,10 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_red.png" Configuration="Release" Class="File">
+                <DeployFile LocalName="images\ornament_red_broken.png" Configuration="Debug" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
-                        <RemoteName>ornament_red.png</RemoteName>
+                        <RemoteName>ornament_red_broken.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1988,7 +1989,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="images\ornament_red_broken.png" Configuration="Debug" Class="File">
+                <DeployFile LocalName="images\ornament_red_broken.png" Configuration="Release" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
                         <RemoteName>ornament_red_broken.png</RemoteName>
@@ -2018,13 +2019,6 @@ $(PostBuildEvent)]]></PostBuildEvent>
                     </Platform>
                     <Platform Name="iOSSimulator">
                         <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>ornament_red_broken.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="images\ornament_red_broken.png" Configuration="Release" Class="File">
-                    <Platform Name="OSX64">
-                        <RemoteDir>Contents\MacOS\</RemoteDir>
                         <RemoteName>ornament_red_broken.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
